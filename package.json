@@ -1,0 +1,13 @@
+{
+  "name": "GurUAE",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "yarn react-native start"
+  },
+  "dependencies": {
+    "hermesvm": "^0.1.1",
+    "react": "^16.12.0",
+    "react-native": "^0.61.5"
+  }
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.ab.uae"
+      android:installLocation="auto" android:versionCode="113" android:versionName="1.13">
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:name=".GurUAEApplication">
+        <activity
+            android:name=".GurUAEActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="Settings"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="org.ab.nativelayer.ImportView"
+            android:label="Choose a file"
+            android:configChanges="keyboardHidden|orientation|screenSize"  />
+        <activity
+            android:name="org.ab.nativelayer.DirImportView"
+            android:label="Choose a directory (long touch to select)"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".DemoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+    </application>
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+<supports-screens android:resizeable="true" android:largeScreens="true" android:anyDensity="true" android:smallScreens="true" android:normalScreens="true"></supports-screens>
+
+</manifest> 
